@@ -1,0 +1,15 @@
+# Node modules (dependencias instaladas)
+node_modules/
+
+# Logs de npm
+npm-debug.log*
+
+# Archivos de lock (opcional si quieres evitar conflictos)
+package-lock.json
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Carpeta de dependencias locales (si generas builds o caché)
+.cache/
