@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ESPE PWA - Portal Informativo</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="module">
+    import '@material/web/button/filled-button.js';
+    import '@material/web/card/outlined-card.js';
+    import '@material/web/dialog/dialog.js';
+    import '@material/web/list/list.js';
+    import '@material/web/menu/menu.js';
+  </script>
+</head>
+<body>
+  <my-navbar></my-navbar>
+
+  <main>
+    <section id="inicio" class="section visible">
+      <h1>Bienvenido a la ESPE</h1>
+      <p>Accede a las secciones usando el menú.</p>
+      <md-filled-button>Leer más</md-filled-button>
+    </section>
+
+    <section id="sobre" class="section hidden">
+      <h2>Sobre la ESPE</h2>
+      <md-outlined-card>
+        <div>
+          <h3>Historia</h3>
+          <p>La Universidad de las Fuerzas Armadas - ESPE fue fundada en 1922...</p>
+        </div>
+      </md-outlined-card>
+    </section>
+
+    <section id="oferta" class="section hidden">
+      <h2>Oferta Académica</h2>
+      <espe-filter></espe-filter>
+      <espe-list></espe-list>
+    </section>
+
+    <section id="admisiones" class="section hidden">
+      <h2>Proceso de Admisión</h2>
+      <p>Para ingresar a la ESPE debes completar los siguientes pasos...</p>
+    </section>
+
+    <section id="contacto" class="section hidden">
+      <h2>Contacto</h2>
+      <p>Dirección: Av. Amazonas N26-79 y Cordero, Quito, Ecuador</p>
+      <p>Teléfono: +593 2 299 7800</p>
+      <p>Email: info@espe.edu.ec</p>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
